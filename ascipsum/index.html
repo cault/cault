@@ -3,10 +3,19 @@
 <html>
 <head>
     <title>ASC Ipsum</title>
+    <script src="js/lorem.js"></script>
 </head>
 
 <body>
+<div id="ascipsum"></div>
 
+<script>
+    
+    var lorem = new Lorem();
+lorem.type = Lorem.TEXT;
+lorem.query = '3p';
+lorem.createLorem(document.getElementById('ascipsum'));
+</script>
 
 
 </body>
